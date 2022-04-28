@@ -23,6 +23,7 @@
         overflow: hidden;
     }
 
+    /*스토리 라인 프로필*/
     .story-profile {
         width: 70px;
         height: 70px;
@@ -38,12 +39,14 @@
         overflow: hidden;
     }
 
+    /*프로필사진들*/
     .profile {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
+    /*슬라이드 이미지*/
     .carousel-item {
         width: 100%;
         height: 600px;
@@ -57,319 +60,430 @@
         overflow: hidden;
     }
 
+    /*댓글창*/
     input:focus {
         outline: none;
         border: none;
     }
+
+    /*왼쪽 메인화면 프로필*/
     .left-profile {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
+        border-radius: 70%;
+        overflow: hidden;
+    }
+    .left-mini-profile {
+        width: 42px;
+        height: 42px;
         border-radius: 70%;
         overflow: hidden;
     }
 </style>
 <body style="background-color: #fafafa;">
-<div>
-    <!--상단 네비게이션바------------------------------------------------------------------------------------------------>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"
-         style="position: fixed; z-index: 1; width: 100%; border-bottom: solid 1px #dbdbdb; align-items: center;">
-        <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap;">
-            <!--        instagram 이미지-------------------------------------------------------------------------------->
-            <a class="navbar-brand" href="#"><img style="width: 100px;"
-                                                  src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
-            </a>
-            <!--            검색창-------------------------------------------------------------------------------------->
-            <input class="form-control me-2" style="width: 300px; " type="search" placeholder="검색"
-                   aria-label="Search">
-            <div>
-                <!--            아이콘---------------------------------------------------------------------------------->
-                <span class="material-icons">home</span>
-                <span class="material-icons-outlined">send</span>
-                <span class="material-icons-outlined">add_box</span>
-                <span class="material-icons-outlined">explore</span>
-                <span class="material-icons-outlined">favorite_border</span>
-                <div class="mini-profile" style="float: right; margin-left: 10px;">
-                    <img class="profile"
-                         src="https://file2.nocutnews.co.kr/newsroom/image/2021/08/12/202108121210585928_12.jpg">
+<!--상단 네비게이션바------------------------------------------------------------------------------------------------>
+<nav class="navbar navbar-expand-lg navbar-light"
+     style="position: fixed; z-index: 1; width: 100%; border-bottom: solid 1px #dbdbdb; background-color: #ffffff; ">
+    <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap;">
+        <!--        instagram 이미지-------------------------------------------------------------------------------->
+        <a class="navbar-brand" href="#"><img style="width: 100px;"
+                                              src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
+        </a>
+        <!--            검색창-------------------------------------------------------------------------------------->
+        <input class="form-control me-2" style="width: 300px; " type="search" placeholder="검색"
+               aria-label="Search">
+        <div>
+            <!--            아이콘---------------------------------------------------------------------------------->
+            <span class="material-icons">home</span>
+            <span class="material-icons-outlined">send</span>
+            <span class="material-icons-outlined">add_box</span>
+            <span class="material-icons-outlined">explore</span>
+            <span class="material-icons-outlined">favorite_border</span>
+            <div class="mini-profile" style="float: right; margin-left: 10px;">
+                <img class="profile"
+                     src="https://file2.nocutnews.co.kr/newsroom/image/2021/08/12/202108121210585928_12.jpg">
+            </div>
+        </div>
+    </div>
+</nav>
+<!--여기까지 네비게이션바--------------------------------------------------------------------------------------------->
+<div style="display: flex; flex-direction: row; justify-content: center;padding-top: 90px;">
+    <!--왼 쪽메인화면창------------------------------------------------------------------------------------------------------>
+    <div style="width: 600px; height: auto; position: absolute; right: 43%; font-size: 13px; font-weight: bold;">
+        <!--    왼쪽 스토리창-------------------------------------------------------------------------------------------->
+        <!--            스토리 박스----------------------------------------------------------------------------------->
+        <div style="border: solid 1px #dbdbdb; border-radius: 2px; display: flex; background-color: white;">
+            <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
+            <div style="padding: 15px;">
+                <div class="story-profile hvr-float-shadow">
+                    <a href=""><img
+                            src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2022/03/07/7DpaM0yUqPdI637822852002295743.jpg"
+                            alt="photo"
+                            class="rounded-circle  profile"/></a>
+                </div>
+                <p>ShinSekyoung<br></p>
+            </div>
+            <div style="padding: 15px;">
+                <div class="story-profile hvr-float-shadow">
+                    <a href=""><img
+                            src="https://entertainimg.kbsmedia.co.kr/cms/uploads/PERSON_20211118083045_e518df56d0623157e071f1c0923a1659.jpg"
+                            alt="photo"
+                            class="rounded-circle  profile"/></a>
+                </div>
+                <p>ChaeSubin<br></p>
+            </div>
+            <div style="padding: 15px;">
+                <div class="story-profile hvr-float-shadow">
+                    <a href=""><img
+                            src="https://img.insight.co.kr/static/2021/02/25/700/img_20210225172243_76505dsj.webp"
+                            alt="photo"
+                            class="rounded-circle  profile"/></a>
+                </div>
+                <p>KimTaeHee<br></p>
+            </div>
+            <div style="padding: 15px;">
+                <div class="story-profile hvr-float-shadow">
+                    <a href=""><img
+                            src="http://img.sportsworldi.com/content/image/2021/07/18/20210718508401.jpg"
+                            alt="photo"
+                            class="rounded-circle  profile"/></a>
+                </div>
+                <p>OhYeonSeo<br></p>
+            </div>
+            <div style="padding: 15px;">
+                <div class="story-profile hvr-float-shadow">
+                    <a href=""><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRxUS1_UQLeUHFn1E3yKgobY51pLnzh_7-0Q&usqp=CAU
+"
+                            alt="photo"
+                            class="rounded-circle  profile"/></a>
+                </div>
+                <p>Haejuk_Lupi<br></p>
+            </div>
+            <!--            위에다가 링크이미지 삽입-->
+        </div>
+        <!--            첫번째 피드!----------------------------------------------------------------------------->
+        <div style="border: solid 1px #dbdbdb; border-radius: 2px; margin-top: 30px; background-color: white;">
+            <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
+                <div style="display: flex; align-items: center">
+                    <div class="box-profile">
+                        <img class="profile"
+                             src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+                    </div>
+                    <div style="margin-left: 10px">
+                        BoYoung
+                    </div>
+                </div>
+                <div>
+                    <span class="material-icons-outlined">more_horiz</span>
+                </div>
+            </div>
+            <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+                 data-bs-interval="false" style="height: 600px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/09/27/OCW92k0OLl2y637683075936484992.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201808/19/5277e53b-623d-47cc-ad96-d5264ef784a0.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--                사진 아래 아이콘--------------------------------------------------------------------->
+            <div style="margin-top: 2%; display: flex; flex-direction: row; justify-content: space-between;">
+                <div style="margin-left: 10px;">
+                    <span class="material-icons-outlined">favorite_border</span>
+                    <span class="material-icons-outlined">mode_comment</span>
+                    <span class="material-icons-outlined">send</span>
+                </div>
+                <div style="margin-right: 10px;">
+                    <span class="material-icons-outlined">bookmark_border</span>
+                </div>
+            </div>
+            <div style="margin-left: 10px;">
+                <!--                좋아요-->
+                <div>좋아요 53,232개</div>
+                <!--                    게시자 글-->
+                <div>BoYoung <span style="font-weight: lighter; color: dodgerblue;">#스파르타 #내일배움캠프 #파이팅</span><b
+                        style="font-weight: lighter"> 오늘도 공부 열심히 하세요 !</b></div>
+                <!--                댓글모두보기-->
+                <div style="font-weight: lighter; color: grey">댓글 3,243개 모두보기</div>
+                <!--                댓글-->
+                <div>kyumin_1020 <span style="font-weight: lighter">보영누나 너무 이뻐요 ㅠㅠ 열심히 할게요 ㅠ</span></div>
+                <!--                몇일,시간,분전-->
+                <div style="font-weight: lighter; font-size: 10px;">3시간전</div>
+                <!--                댓글달기-->
+                <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                    <input type="email" class="form-control"
+                           style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
+                           placeholder="댓글 달기 ...">
                 </div>
             </div>
         </div>
-    </nav>
-    <!--여기까지 네비게이션바--------------------------------------------------------------------------------------------->
-
-    <!--왼 쪽메인화면창------------------------------------------------------------------------------------------------------>
-    <div style="display: flex; flex-direction: row; justify-content: center; padding-top: 90px;">
-        <!--    왼쪽 스토리창-------------------------------------------------------------------------------------------->
-        <div style="width: 600px; height: auto; position: absolute; right: 43%; font-size: 13px; font-weight: bold;">
-            <!--            피드 박스----------------------------------------------------------------------------------->
-            <div style="border: solid 1px #dbdbdb; border-radius: 2px;">
-                <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
-                    <div style="display: flex; align-items: center">
-                        <div class="story-profile">
-                            <img class="profile"
-                                 src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
-                        </div>
-                        <div style="margin-left: 10px">
-                            BoYoung
-                        </div>
+        <!--            두번째 피드!----------------------------------------------------------------------------->
+        <div style="border: solid 1px #dbdbdb; border-radius: 2px; margin-top: 30px; background-color: white;">
+            <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
+                <div style="display: flex; align-items: center">
+                    <div class="box-profile">
+                        <img class="profile"
+                             src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
                     </div>
+                    <div style="margin-left: 10px">
+                        BoYoung
+                    </div>
+                </div>
+                <div>
+                    <span class="material-icons-outlined">more_horiz</span>
                 </div>
             </div>
-            <!--            첫번째 피드!----------------------------------------------------------------------------->
-            <div style="border: solid 1px #dbdbdb; border-radius: 2px; margin-top: 30px;">
-                <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
-                    <div style="display: flex; align-items: center">
-                        <div class="box-profile">
-                            <img class="profile"
-                                 src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
-                        </div>
-                        <div style="margin-left: 10px">
-                            BoYoung
-                        </div>
+            <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+                 data-bs-interval="false" style="height: 600px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
                     </div>
-                    <div>
-                        <span class="material-icons-outlined">more_horiz</span>
+                    <div class="carousel-item">
+                        <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/09/27/OCW92k0OLl2y637683075936484992.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
                     </div>
-                </div>
-                <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
-                     data-bs-interval="false" style="height: 600px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/09/27/OCW92k0OLl2y637683075936484992.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201808/19/5277e53b-623d-47cc-ad96-d5264ef784a0.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <!--                사진 아래 아이콘--------------------------------------------------------------------->
-                <div style="margin-top: 2%; display: flex; flex-direction: row; justify-content: space-between;">
-                    <div style="margin-left: 10px;">
-                        <span class="material-icons-outlined">favorite_border</span>
-                        <span class="material-icons-outlined">mode_comment</span>
-                        <span class="material-icons-outlined">send</span>
-                    </div>
-                    <div style="margin-right: 10px;">
-                        <span class="material-icons-outlined">bookmark_border</span>
+                    <div class="carousel-item">
+                        <img src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201808/19/5277e53b-623d-47cc-ad96-d5264ef784a0.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--                사진 아래 아이콘--------------------------------------------------------------------->
+            <div style="margin-top: 2%; display: flex; flex-direction: row; justify-content: space-between;">
                 <div style="margin-left: 10px;">
-                    <!--                좋아요-->
-                    <div>좋아요 53,232개</div>
-                    <!--                    게시자 글-->
-                    <div>BoYoung <span style="font-weight: lighter; color: dodgerblue;">#스파르타 #내일배움캠프 #파이팅</span><b
-                            style="font-weight: lighter"> 오늘도 공부 열심히 하세요 !</b></div>
-                    <!--                댓글모두보기-->
-                    <div style="font-weight: lighter; color: grey">댓글 3,243개 모두보기</div>
-                    <!--                댓글-->
-                    <div>kyumin_1020 <span style="font-weight: lighter">보영누나 너무 이뻐요 ㅠㅠ 열심히 할게요 ㅠ</span></div>
-                    <!--                몇일,시간,분전-->
-                    <div style="font-weight: lighter; font-size: 10px;">3시간전</div>
-                    <!--                댓글달기-->
-                    <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
-                        <input type="email" class="form-control"
-                               style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
-                               placeholder="댓글 달기 ...">
-                    </div>
+                    <span class="material-icons-outlined">favorite_border</span>
+                    <span class="material-icons-outlined">mode_comment</span>
+                    <span class="material-icons-outlined">send</span>
+                </div>
+                <div style="margin-right: 10px;">
+                    <span class="material-icons-outlined">bookmark_border</span>
                 </div>
             </div>
-            <!--            두번째 피드!----------------------------------------------------------------------------->
-            <div style="border: solid 1px #dbdbdb; border-radius: 2px; margin-top: 30px;">
-                <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
-                    <div style="display: flex; align-items: center">
-                        <div class="box-profile">
-                            <img class="profile"
-                                 src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
-                        </div>
-                        <div style="margin-left: 10px">
-                            BoYoung
-                        </div>
-                    </div>
-                    <div>
-                        <span class="material-icons-outlined">more_horiz</span>
-                    </div>
-                </div>
-                <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
-                     data-bs-interval="false" style="height: 600px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/09/27/OCW92k0OLl2y637683075936484992.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201808/19/5277e53b-623d-47cc-ad96-d5264ef784a0.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <!--                사진 아래 아이콘--------------------------------------------------------------------->
-                <div style="margin-top: 2%; display: flex; flex-direction: row; justify-content: space-between;">
-                    <div style="margin-left: 10px;">
-                        <span class="material-icons-outlined">favorite_border</span>
-                        <span class="material-icons-outlined">mode_comment</span>
-                        <span class="material-icons-outlined">send</span>
-                    </div>
-                    <div style="margin-right: 10px;">
-                        <span class="material-icons-outlined">bookmark_border</span>
-                    </div>
-                </div>
-                <div style="margin-left: 10px;">
-                    <!--                좋아요-->
-                    <div>좋아요 53,232개</div>
-                    <!--                    게시자 글-->
-                    <div>BoYoung <span style="font-weight: lighter; color: dodgerblue;">#스파르타 #내일배움캠프 #파이팅</span><b
-                            style="font-weight: lighter"> 오늘도 공부 열심히 하세요 !</b></div>
-                    <!--                댓글모두보기-->
-                    <div style="font-weight: lighter; color: grey">댓글 3,243개 모두보기</div>
-                    <!--                댓글-->
-                    <div>kyumin_1020 <span style="font-weight: lighter">보영누나 너무 이뻐요 ㅠㅠ 열심히 할게요 ㅠ</span></div>
-                    <!--                몇일,시간,분전-->
-                    <div style="font-weight: lighter; font-size: 10px;">3시간전</div>
-                    <!--                댓글달기-->
-                    <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
-                        <input type="email" class="form-control"
-                               style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
-                               placeholder="댓글 달기 ...">
-                    </div>
+            <div style="margin-left: 10px;">
+                <!--                좋아요-->
+                <div>좋아요 53,232개</div>
+                <!--                    게시자 글-->
+                <div>BoYoung <span style="font-weight: lighter; color: dodgerblue;">#스파르타 #내일배움캠프 #파이팅</span><b
+                        style="font-weight: lighter"> 오늘도 공부 열심히 하세요 !</b></div>
+                <!--                댓글모두보기-->
+                <div style="font-weight: lighter; color: grey">댓글 3,243개 모두보기</div>
+                <!--                댓글-->
+                <div>kyumin_1020 <span style="font-weight: lighter">보영누나 너무 이뻐요 ㅠㅠ 열심히 할게요 ㅠ</span></div>
+                <!--                몇일,시간,분전-->
+                <div style="font-weight: lighter; font-size: 10px;">3시간전</div>
+                <!--                댓글달기-->
+                <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                    <input type="email" class="form-control"
+                           style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
+                           placeholder="댓글 달기 ...">
                 </div>
             </div>
-            <!--            세번째 피드!----------------------------------------------------------------------------->
-            <div style="border: solid 1px #dbdbdb; border-radius: 2px; margin-top: 30px;">
-                <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
-                    <div style="display: flex; align-items: center">
-                        <div class="box-profile">
-                            <img class="profile"
-                                 src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
-                        </div>
-                        <div style="margin-left: 10px">
-                            BoYoung
-                        </div>
+        </div>
+        <!--            세번째 피드!----------------------------------------------------------------------------->
+        <div style="border: solid 1px #dbdbdb; border-radius: 2px; margin-top: 30px; background-color: white;">
+            <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
+                <div style="display: flex; align-items: center">
+                    <div class="box-profile">
+                        <img class="profile"
+                             src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
                     </div>
-                    <div>
-                        <span class="material-icons-outlined">more_horiz</span>
+                    <div style="margin-left: 10px">
+                        BoYoung
                     </div>
                 </div>
-                <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
-                     data-bs-interval="false" style="height: 600px;">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/09/27/OCW92k0OLl2y637683075936484992.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201808/19/5277e53b-623d-47cc-ad96-d5264ef784a0.jpg"
-                                 class="d-block w-100 feed-picture" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <div>
+                    <span class="material-icons-outlined">more_horiz</span>
                 </div>
-                <!--                사진 아래 아이콘--------------------------------------------------------------------->
-                <div style="margin-top: 2%; display: flex; flex-direction: row; justify-content: space-between;">
-                    <div style="margin-left: 10px;">
-                        <span class="material-icons-outlined">favorite_border</span>
-                        <span class="material-icons-outlined">mode_comment</span>
-                        <span class="material-icons-outlined">send</span>
+            </div>
+            <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+                 data-bs-interval="false" style="height: 600px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
                     </div>
-                    <div style="margin-right: 10px;">
-                        <span class="material-icons-outlined">bookmark_border</span>
+                    <div class="carousel-item">
+                        <img src="http://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2021/09/27/OCW92k0OLl2y637683075936484992.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://pds.joongang.co.kr//news/component/htmlphoto_mmdata/201808/19/5277e53b-623d-47cc-ad96-d5264ef784a0.jpg"
+                             class="d-block w-100 feed-picture" alt="...">
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--                사진 아래 아이콘--------------------------------------------------------------------->
+            <div style="margin-top: 2%; display: flex; flex-direction: row; justify-content: space-between;">
                 <div style="margin-left: 10px;">
-                    <!--                좋아요-->
-                    <div>좋아요 53,232개</div>
-                    <!--                    게시자 글-->
-                    <div>BoYoung <span style="font-weight: lighter; color: dodgerblue;">#스파르타 #내일배움캠프 #파이팅</span><b
-                            style="font-weight: lighter"> 오늘도 공부 열심히 하세요 !</b></div>
-                    <!--                댓글모두보기-->
-                    <div style="font-weight: lighter; color: grey">댓글 3,243개 모두보기</div>
-                    <!--                댓글-->
-                    <div>kyumin_1020 <span style="font-weight: lighter">보영누나 너무 이뻐요 ㅠㅠ 열심히 할게요 ㅠ</span></div>
-                    <!--                몇일,시간,분전-->
-                    <div style="font-weight: lighter; font-size: 10px;">3시간전</div>
-                    <!--                댓글달기-->
-                    <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
-                        <input type="email" class="form-control"
-                               style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
-                               placeholder="댓글 달기 ...">
-                    </div>
+                    <span class="material-icons-outlined">favorite_border</span>
+                    <span class="material-icons-outlined">mode_comment</span>
+                    <span class="material-icons-outlined">send</span>
+                </div>
+                <div style="margin-right: 10px;">
+                    <span class="material-icons-outlined">bookmark_border</span>
+                </div>
+            </div>
+            <div style="margin-left: 10px;">
+                <!--                좋아요-->
+                <div>좋아요 53,232개</div>
+                <!--                    게시자 글-->
+                <div>BoYoung <span style="font-weight: lighter; color: dodgerblue;">#스파르타 #내일배움캠프 #파이팅</span><b
+                        style="font-weight: lighter"> 오늘도 공부 열심히 하세요 !</b></div>
+                <!--                댓글모두보기-->
+                <div style="font-weight: lighter; color: grey">댓글 3,243개 모두보기</div>
+                <!--                댓글-->
+                <div>kyumin_1020 <span style="font-weight: lighter">보영누나 너무 이뻐요 ㅠㅠ 열심히 할게요 ㅠ</span></div>
+                <!--                몇일,시간,분전-->
+                <div style="font-weight: lighter; font-size: 10px;">3시간전</div>
+                <!--                댓글달기-->
+                <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                    <input type="email" class="form-control"
+                           style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
+                           placeholder="댓글 달기 ...">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <!--    오른쪽 피드창-->
-    <div style="width: 350px; height: 1000px; position: fixed; left: 58%">
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
-            <div style="display: flex; align-items: center">
-                <div class="left-profile">
-                    <img class="profile"
-                         src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
-                </div>
-                <div style="margin-left: 10px">
-                    BoYoung
-                </div>
+<!--    오른쪽 피드창-->
+<div style="width: 350px; height: 1000px; position: fixed; left: 58%">
+    <div style="align-items: center; justify-content: space-between; margin-top: 10%; margin-left: 1%; margin-bottom: 2%;">
+        <div style="align-items: center; display: flex;">
+            <div class="left-profile" style="">
+                <img class="profile"
+                     src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
             </div>
-            <div>
-                <span class="material-icons-outlined">more_horiz</span>
+            <div style="margin-left: 10px;">
+                BoYoung<br>
+                <p style="font-size: 14px; color: grey">박보영</p>
+            </div>
+            <div style="margin-left: 43%; font-size: 12px; color: cornflowerblue">
+                전환
             </div>
         </div>
-        <div>회원님을위한 추천</div>
-        <div>추천</div>
-        <div>추천</div>
-        <div>추천</div>
-        <div>추천</div>
-        <div>추천</div>
+        <div style="align-items: center; display: flex; margin-top: 8%">
+            <div style="font-size: 15px;color: grey;">
+                회원님을 위한 추천
+            </div>
+            <div style="margin-left: 36%; font-size: 12px; color: cornflowerblue">
+                모두보기
+            </div>
+        </div>
+        <div style="align-items: center; display: flex; margin-top: 4%">
+            <div class="left-mini-profile" style="">
+                <img class="profile"
+                     src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+            </div>
+            <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
+                BoYoung<br>
+                <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
+            </div>
+            <div style="margin-left: 34%; font-size: 12px; color: cornflowerblue">
+                전환
+            </div>
+        </div>
+        <div style="align-items: center; display: flex; margin-top: 4%">
+            <div class="left-mini-profile" style="">
+                <img class="profile"
+                     src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+            </div>
+            <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
+                BoYoung<br>
+                <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
+            </div>
+            <div style="margin-left: 34%; font-size: 12px; color: cornflowerblue">
+                전환
+            </div>
+        </div>
+        <div style="align-items: center; display: flex; margin-top: 4%">
+            <div class="left-mini-profile" style="">
+                <img class="profile"
+                     src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+            </div>
+            <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
+                BoYoung<br>
+                <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
+            </div>
+            <div style="margin-left: 34%; font-size: 12px; color: cornflowerblue">
+                전환
+            </div>
+        </div>
+        <div style="align-items: center; display: flex; margin-top: 4%">
+            <div class="left-mini-profile" style="">
+                <img class="profile"
+                     src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+            </div>
+            <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
+                BoYoung<br>
+                <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
+            </div>
+            <div style="margin-left: 34%; font-size: 12px; color: cornflowerblue">
+                전환
+            </div>
+        </div>
+        <div style="align-items: center; display: flex; margin-top: 4%">
+            <div class="left-mini-profile" style="">
+                <img class="profile"
+                     src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+            </div>
+            <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
+                BoYoung<br>
+                <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
+            </div>
+            <div style="margin-left: 34%; font-size: 12px; color: cornflowerblue">
+                전환
+            </div>
+        </div>
+
     </div>
 
 </div>
@@ -387,6 +501,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 -->
-</div>
 </body>
 </html>
