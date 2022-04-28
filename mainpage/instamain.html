@@ -12,58 +12,127 @@
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
           rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <title>UIclone</title>
 </head>
 <style>
+    .box {
+        width: 30px;
+        height: 30px;
+        border-radius: 70%;
+        overflow: hidden;
+    }
 
+    .mini-profile {
+        width: 25px;
+        height: 25px;
+        border-radius: 70%;
+        overflow: hidden;
+    }
+
+    .profile {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 </style>
-<body>
-<!--상단 네비게이션바------------------------------------------------------------------------------------------------>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap;">
+<body style="background-color: #fafafa;">
+<div>
+    <!--상단 네비게이션바------------------------------------------------------------------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+         style="position: fixed; z-index: 1; width: 100%; border-bottom: solid 1px #dbdbdb; align-items: center;">
+        <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap;">
             <!--        instagram 이미지-->
             <a class="navbar-brand" href="#"><img style="width: 100px;"
                                                   src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
             </a>
             <!--            검색창-->
-            <input class="form-control me-2" style="width: 300px; " type="search" placeholder="Search"
+            <input class="form-control me-2" style="width: 300px; " type="search" placeholder="검색"
                    aria-label="Search">
-        <div style="">
-            <!--            아이콘-->
-            <span class="material-icons">home</span>
-            <span class="material-icons-outlined">send</span>
-            <span class="material-icons-outlined">add_box</span>
-            <span class="material-icons-outlined">explore</span>
-            <span class="material-icons-outlined">favorite_border</span>
+            <div>
+                <!--            아이콘-->
+                <span class="material-icons">home</span>
+                <span class="material-icons-outlined">send</span>
+                <span class="material-icons-outlined">add_box</span>
+                <span class="material-icons-outlined">explore</span>
+                <span class="material-icons-outlined">favorite_border</span>
+                <div class="mini-profile" style="float: right; margin-left: 10px;">
+                    <img class="profile"
+                         src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--여기까지 네비게이션바--------------------------------------------------------------------------------------------->
+
+    <!--메인화면창------------------------------------------------------------------------------------------------------>
+    <div style="display: flex; flex-direction: row; justify-content: center; padding-top: 90px;">
+        <!--    오른쪽 피드창-->
+        <div style="width: 600px; height: 1000px; position: absolute; right: 43%; font-size: 13px; font-weight: bold;">
+            <!--            피드 박스-->
+            <div style="border: solid 1px #dbdbdb; border-radius: 2px;">
+                <!--                상단의 이미지와 이름-->
+                <div style="display: flex; align-items: center; margin-top: 2%; margin-left: 1%">
+                    <div class="box">
+                        <img class="profile"
+                             src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+                    </div>
+                    <div style="margin-left: 2%">
+                        BoYoung
+                    </div>
+                </div>
+                <!--                메인 사진-->
+                <div style="margin-top: 2%">
+                    <img src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"
+                         style="max-width:100%; height:auto;">
+                </div>
+                <!--                사진 아래 아이콘-->
+                <div style="margin-top: 2%; display: flex; flex-direction: row; justify-content: space-between;">
+                    <div>
+                        <span class="material-icons-outlined">favorite_border</span>
+                        <span class="material-icons-outlined">mode_comment</span>
+                        <span class="material-icons-outlined">send</span>
+                    </div>
+                    <div>
+                        <span class="material-icons-outlined">bookmark_border</span>
+                    </div>
+                </div>
+                <!--                좋아요-->
+                <div>좋아요</div>
+                <!--                댓글-->
+                <div>댓글</div>
+                <!--                댓글모두보기-->
+                <div>댓글모두보기</div>
+                <!--                몇일전-->
+                <div>몇일전</div>
+                <!--                댓글달기-->
+                <div>댓글달기(부트스트랩?)</div>
+            </div>
+        </div>
+        <!--    왼쪽 피드창-->
+        <div style="width: 350px; height: 1000px; position: fixed; left: 58%">
+            <div>사용자 정보</div>
+            <div>회원님을위한 추천</div>
+            <div>추천</div>
+            <div>추천</div>
+            <div>추천</div>
+            <div>추천</div>
+            <div>추천</div>
         </div>
     </div>
-</nav>
-<!--여기까지 네비게이션바--------------------------------------------------------------------------------------------->
 
-<div style="display: flex; flex-direction: row;">
-    <div>
 
-    </div>
-    <div>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </div>
-
-
-
-
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
--->
 </body>
 </html>
