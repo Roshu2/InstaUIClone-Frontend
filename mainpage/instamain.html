@@ -98,6 +98,7 @@
         font-weight: lighter;
         font-size: 12px;
         text-align: center;
+        padding-bottom: -20px;
     }
 
     /*피드 박스*/
@@ -114,20 +115,25 @@
         display: flex;
         margin-top: 4%
     }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 </style>
 <body style="background-color: #fafafa;">
 <!--상단 네비게이션바---------------------------------------------------------------------------------------------------->
 <nav class="navbar navbar-expand-lg navbar-light"
      style="position: fixed; z-index: 1; width: 100%; border-bottom: solid 1px #dbdbdb; background-color: #ffffff; ">
-    <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap;">
+    <div class="container-fluid" style="justify-content: space-evenly; flex-wrap: nowrap;">
         <!--        instagram 이미지-------------------------------------------------------------------------------->
-        <a class="navbar-brand" href="#"><img style="width: 100px;"
+        <a class="navbar-brand" href="#"><img style="width: 100px; margin-left: 300px;"
                                               src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
         </a>
         <!--            검색창-------------------------------------------------------------------------------------->
-        <input class="form-control me-2" style="width: 300px; " type="search" placeholder="검색"
+        <input class="form-control me-2" style="max-width: 300px;" type="search" placeholder="검색"
                aria-label="Search">
-        <div>
+        <div style="margin-right: 300px;">
             <!--            아이콘---------------------------------------------------------------------------------->
             <span class="material-icons">home</span>
             <span class="material-icons-outlined">send</span>
@@ -135,8 +141,8 @@
             <span class="material-icons-outlined">explore</span>
             <span class="material-icons-outlined">favorite_border</span>
             <div class="mini-profile" style="float: right; margin-left: 10px;">
-                <img class="profile"
-                     src="https://file2.nocutnews.co.kr/newsroom/image/2021/08/12/202108121210585928_12.jpg">
+                <a href=""><img class="profile"
+                                src="https://file2.nocutnews.co.kr/newsroom/image/2021/08/12/202108121210585928_12.jpg"></a>
             </div>
         </div>
     </div>
@@ -150,7 +156,7 @@
         <div class="story-box">
             <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
             <div style="padding: 15px;">
-                <div class="story-profile hvr-float-shadow">
+                <div class="story-profile">
                     <a href=""><img
                             src="https://newsimg.hankookilbo.com/cms/articlerelease/2021/05/20/ec460693-5a1a-4e86-b289-56fb57b33af4.jpg"
                             alt="photo"
@@ -159,7 +165,7 @@
                 <p>Sekyoung<br></p>
             </div>
             <div style="padding: 15px;">
-                <div class="story-profile hvr-float-shadow">
+                <div class="story-profile">
                     <a href=""><img
                             src="https://entertainimg.kbsmedia.co.kr/cms/uploads/PERSON_20211118083045_e518df56d0623157e071f1c0923a1659.jpg"
                             alt="photo"
@@ -168,7 +174,7 @@
                 <p>ChaeSubin<br></p>
             </div>
             <div style="padding: 15px;">
-                <div class="story-profile hvr-float-shadow">
+                <div class="story-profile">
                     <a href=""><img
                             src="https://img.insight.co.kr/static/2021/02/25/700/img_20210225172243_76505dsj.webp"
                             alt="photo"
@@ -177,7 +183,7 @@
                 <p>KimTaeHee<br></p>
             </div>
             <div style="padding: 15px;">
-                <div class="story-profile hvr-float-shadow">
+                <div class="story-profile">
                     <a href=""><img
                             src="http://img.sportsworldi.com/content/image/2021/07/18/20210718508401.jpg"
                             alt="photo"
@@ -186,7 +192,7 @@
                 <p>OhYeonSeo<br></p>
             </div>
             <div style="padding: 15px;">
-                <div class="story-profile hvr-float-shadow">
+                <div class="story-profile">
                     <a href=""><img
                             src="http://www.incheonilbo.com/news/photo/201910/989046_269424_0446.jpg"
                             alt="photo"
@@ -202,15 +208,15 @@
             <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
                 <div style="display: flex; align-items: center">
                     <div class="box-profile">
-                        <img class="profile"
-                             src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg">
+                        <a href=""><img class="profile"
+                                        src="https://blog.kakaocdn.net/dn/b0ZMMh/btq4eKTyBG4/aVgQqfsq543UByfJSaK0cK/img.jpg"></a>
                     </div>
                     <div style="margin-left: 10px">
                         BoYoung
                     </div>
                 </div>
                 <div>
-                    <span class="material-icons-outlined">more_horiz</span>
+                    <a href=""><span class="material-icons-outlined" style="margin-right: 15px;">more_horiz</span></a>
                 </div>
             </div>
             <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
@@ -278,15 +284,15 @@
             <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
                 <div style="display: flex; align-items: center">
                     <div class="box-profile">
-                        <img class="profile"
-                             src="https://img.hankyung.com/photo/202102/01.25255306.1.jpg">
+                        <a href=""><img class="profile"
+                                        src="https://img.hankyung.com/photo/202102/01.25255306.1.jpg"></a>
                     </div>
                     <div style="margin-left: 10px">
                         Sekyoung
                     </div>
                 </div>
                 <div>
-                    <span class="material-icons-outlined">more_horiz</span>
+                    <a href=""><span class="material-icons-outlined" style="margin-right: 15px;">more_horiz</span></a>
                 </div>
             </div>
             <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
@@ -353,15 +359,15 @@
             <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2%; margin-left: 1%; margin-bottom: 2%;">
                 <div style="display: flex; align-items: center">
                     <div class="box-profile">
-                        <img class="profile"
-                             src="https://upload.wikimedia.org/wikipedia/commons/d/d4/170821_%EC%98%A4%EC%97%B0%EC%84%9C_09.jpg">
+                        <a href=""><img class="profile"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/d/d4/170821_%EC%98%A4%EC%97%B0%EC%84%9C_09.jpg"></a>
                     </div>
                     <div style="margin-left: 10px">
                         OhYeonSeo
                     </div>
                 </div>
                 <div>
-                    <span class="material-icons-outlined">more_horiz</span>
+                    <a href=""><span class="material-icons-outlined" style="margin-right: 15px;">more_horiz</span></a>
                 </div>
             </div>
             <!--                메인 피드 슬라이드 사진--------------------------------------------------------------->
@@ -402,6 +408,7 @@
                     <span class="material-icons-outlined">bookmark_border</span>
                 </div>
             </div>
+            <!--            아이콘 아래 텍스트 부분-------------------------------------------------------------------->
             <div style="margin-left: 10px;">
                 <!--                좋아요-->
                 <div>좋아요 72,432개</div>
@@ -429,18 +436,18 @@
 <!--------------------    오른쪽단 피드창-------------------------------------------------------------------------------->
 <div style="width: 350px; height: 1000px; position: fixed; left: 58%">
     <div style="align-items: center; justify-content: space-between; margin-top: 10%; margin-left: 1%; margin-bottom: 2%;">
+        <!--            내 프로필 부분----------------------------------------------------------------------------------->
         <div style="align-items: center; display: flex;">
-            <!--            내 프로필 부분------------------------------------------------------------------------------->
             <div class="left-profile" style="">
-                <img class="profile"
-                     src="https://file2.nocutnews.co.kr/newsroom/image/2021/08/12/202108121210585928_12.jpg">
+                <a href=""><img class="profile"
+                                src="https://file2.nocutnews.co.kr/newsroom/image/2021/08/12/202108121210585928_12.jpg"></a>
             </div>
-            <div style="margin-left: 10px;">
+            <div style="margin-left: 10px; font-weight: bold; font-size: 14px;">
                 Kangjun<br>
-                <p style="font-size: 14px; color: grey">서강준</p>
+                <p style="font-size: 14px; color: grey; font-weight: lighter">서강준</p>
             </div>
-            <div style="margin-left: 43%; font-size: 12px; color: cornflowerblue">
-                전환
+            <div style="margin-left: 43%; font-size: 12px;">
+                <button style="background: none; border: none; color: cornflowerblue">전환</button>
             </div>
         </div>
         <!--        회원 추천------------------------------------------------------------------------------------------->
@@ -448,76 +455,80 @@
             <div style="font-size: 15px;color: grey;">
                 회원님을 위한 추천
             </div>
-            <div style="margin-left: 36%; font-size: 12px; font-weight: bold">
-                모두보기
+            <div style="margin-left: 33%; font-size: 12px;">
+                <button style="background: none; border: none; color: black; font-weight: bold">모두 보기</button>
             </div>
         </div>
         <!--        추천 받은 회원 사진,이름,팔로우------------------------------------------------------------------------>
         <div class="rec-member">
             <div class="left-mini-profile" style="">
-                <img class="profile"
-                     src="https://hobbyen.co.kr/news/data/20190922/p179512936410745_230.png">
+                <a href=""><img class="profile"
+                                src="https://hobbyen.co.kr/news/data/20190922/p179512936410745_230.png"></a>
             </div>
             <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
                 Ah_joong<br>
                 <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
             </div>
-            <div style="margin-left: 32%; font-size: 12px; color: cornflowerblue">
-                팔로우
+            <div style="margin-left: 30%; font-size: 12px;">
+                <button style="background: none; border: none; color: cornflowerblue">팔로우</button>
             </div>
         </div>
         <div class="rec-member">
             <div class="left-mini-profile" style="">
-                <img class="profile"
-                     src="https://images.chosun.com/resizer/FsOMneSc-cqLuTJLPzGikVMxMB8=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/UDCAF66DOSLFMSLL57DVVYKW7M.jpg">
+                <a href=""><img class="profile"
+                                src="https://images.chosun.com/resizer/FsOMneSc-cqLuTJLPzGikVMxMB8=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/UDCAF66DOSLFMSLL57DVVYKW7M.jpg"></a>
             </div>
             <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
                 SiYoung<br>
                 <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
             </div>
-            <div style="margin-left: 32%; font-size: 12px; color: cornflowerblue">
-                팔로우
+            <div style="margin-left: 30%; font-size: 12px;">
+                <button style="background: none; border: none; color: cornflowerblue">팔로우</button>
             </div>
         </div>
         <div class="rec-member">
             <div class="left-mini-profile" style="">
-                <img class="profile"
-                     src="https://photo.jtbc.joins.com/news/jam_photo/202109/19/c68f561c-7260-4f96-afb0-375e2b8389c6.jpg">
+                <a href=""><img class="profile"
+                                src="https://photo.jtbc.joins.com/news/jam_photo/202109/19/c68f561c-7260-4f96-afb0-375e2b8389c6.jpg"></a>
             </div>
             <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
                 Moo_yeol<br>
                 <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
             </div>
-            <div style="margin-left: 32%; font-size: 12px; color: cornflowerblue">
-                팔로우
+            <div style="margin-left: 30%; font-size: 12px;">
+                <button style="background: none; border: none; color: cornflowerblue">팔로우</button>
             </div>
         </div>
         <div class="rec-member">
             <div class="left-mini-profile" style="">
-                <img class="profile"
-                     src="https://blog.kakaocdn.net/dn/baKQJg/btq99n7aBDP/LwjB5ZHIu6XIRjyP9SUSVK/img.jpg">
+                <a href=""><img class="profile"
+                                src="https://blog.kakaocdn.net/dn/baKQJg/btq99n7aBDP/LwjB5ZHIu6XIRjyP9SUSVK/img.jpg"></a>
             </div>
             <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
                 Sung_kyun<br>
                 <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
             </div>
-            <div style="margin-left: 32%; font-size: 12px; color: cornflowerblue">
-                팔로우
+            <div style="margin-left: 30%; font-size: 12px;">
+                <button style="background: none; border: none; color: cornflowerblue">팔로우</button>
             </div>
         </div>
         <div class="rec-member">
             <div class="left-mini-profile" style="">
-                <img class="profile"
-                     src="https://img.hankyung.com/photo/201811/BF.18261458.1.jpg">
+                <a href=""><img class="profile"
+                                src="https://img.hankyung.com/photo/201811/BF.18261458.1.jpg"></a>
             </div>
             <div style="margin-left: 10px; font-size: 14px; font-weight: bold;">
                 Soyeon<br>
                 <p style="font-size: 12px; color: grey; font-weight: lighter">회원님을 위한 추천</p>
             </div>
-            <div style="margin-left: 32%; font-size: 12px; color: cornflowerblue">
-                팔로우
+            <div style="margin-left: 30%; font-size: 12px;">
+                <button style="background: none; border: none; color: cornflowerblue">팔로우</button>
             </div>
         </div>
+        <!--        우측 하단 푸터--------------------------------------------------------------------------------------->
+        <footer style="margin-top: 8%; font-size: 12px; font-weight: lighter; color:#c7c7c7">스파르타 내일배움캠프 KTLO팀<br><br>
+            © 2022 INSTAGRAM CLONE FROM KYUMIN_KIM
+        </footer>
     </div>
 </div>
 
