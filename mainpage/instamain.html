@@ -11,6 +11,8 @@
     <!--    구글 머터리얼 아이콘   -->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
           rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <!--    jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -39,6 +41,7 @@
         background-clip: content-box, border-box;
         /*overflow: hidden;*/
     }
+
     /*스토리 박스*/
     .story-box {
         height: 119px;
@@ -52,6 +55,7 @@
         color: #696868;
         text-align: center;
     }
+
     .story-name {
         margin-top: 5px;
     }
@@ -112,7 +116,6 @@
         padding: 2px;
 
     }
-
 
 
     /*피드 박스*/
@@ -185,24 +188,58 @@
         }
     }
 
-    @media (max-width: 130px) {
-        .form-control {
-            display: none;
+    @media screen and (max-width: 640px) {
+
+        html {
+            /*background: red;*/
+
         }
+
+        .aLayer {
+            /*padding: 1.0em;*/
+            display: none;
+
+        }
+
     }
 
-    @media all and(max-width: 960px) {
-        body {
-            width: 600px;
-            background-color: blue;
+    @media screen and (max-width: 1000px) {
+
+        html {
+            /*background: red;*/
+
         }
+
+        .bLayer {
+            /*padding: 1.0em;*/
+            display: none;
+
+        }
+
+    }
+
+    @media screen and (max-width: 640px) {
+
+        html {
+            /*background: red;*/
+
+        }
+
+        .cLayer {
+            width: 90%;
+            height: 60%;
+            overflow: hidden;
+
+
+        }
+
     }
 
 
 </style>
 
 
-<body style="background-color: #fafafa; min-width: 1000px; width: 100%;">
+<body style="background-color: #fafafa; width: 100%;">
 <!--상단 네비게이션바---------------------------------------------------------------------------------------------------->
 
 <nav class="navbar navbar-expand-lg navbar-light"
@@ -210,14 +247,15 @@
     <div class="container-fluid" style="justify-content: space-between; flex-wrap: nowrap; max-width: 940px;">
         <!--        instagram 이미지-------------------------------------------------------------------------------->
         <a class="navbar-brand" href="../mainpage/instamain.html"><img style="width: 100px;"
-                                                           src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
+                                                                       src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
         </a>
         <!--            검색창-------------------------------------------------------------------------------------->
-        <input class="form-control me-2" style="max-width: 300px;" type="search" placeholder="검색"
+        <input class="form-control me-2 aLayer" style="max-width: 300px;" type="search" placeholder="검색"
                aria-label="Search">
         <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
             <!--            아이콘---------------------------------------------------------------------------------->
-            <a href="../mainpage/instamain.html"><span style="margin: 6px 12px 0 12px;" class="material-icons">home</span></a>
+            <a href="../mainpage/instamain.html"><span style="margin: 6px 12px 0 12px;"
+                                                       class="material-icons">home</span></a>
             <span style="margin: 0 12px 0 12px;" class="material-icons-outlined">send</span>
             <span style="margin: 0 12px 0 12px;" class="material-icons-outlined">add_box</span>
             <span style="margin: 0 12px 0 12px;" class="material-icons-outlined">explore</span>
@@ -229,70 +267,70 @@
         </div>
     </div>
 </nav>
-<!------------중앙레이아웃---------------------------------------------------------------------------------------------->
+<!------------------------중앙레이아웃-------------------------------------------------------------------------------->
 <div style="display: flex; flex-direction: row; position: relative; justify-content: center; top: 85px;">
-    <!--왼 쪽메인화면창-------------------------------------------------------------------------------------------------->
-    <div style="max-width: 600px; width: 100%; max-height: 3000px; height: 100%; position: relative; font-size: 13px; font-weight: bold;">
-        <!--    왼쪽 스토리창-------------------------------------------------------------------------------------------->
-        <!--            스토리 박스------------------------------------------------------------------------------------->
-        <div class="story-box">
-            <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
-            <div style="padding: 15px;">
-                <div class="story-profile">
-                    <a href=""><img
-                            src="https://newsimg.hankookilbo.com/cms/articlerelease/2021/05/20/ec460693-5a1a-4e86-b289-56fb57b33af4.jpg"
-                            alt="photo"
-                            class="rounded-circle  profile"/></a>
-                </div>
-                <p class="story-name">Sekyoung<br></p>
-            </div>
-            <div style="padding: 15px;">
-                <div class="story-profile">
-                    <a href=""><img
-                            src="https://entertainimg.kbsmedia.co.kr/cms/uploads/PERSON_20211118083045_e518df56d0623157e071f1c0923a1659.jpg"
-                            alt="photo"
-                            class="rounded-circle  profile"/></a>
-                </div>
-                <p class="story-name">ChaeSubin<br></p>
-            </div>
-            <div style="padding: 15px;">
-                <div class="story-profile">
-                    <a href=""><img
-                            src="https://img.insight.co.kr/static/2021/02/25/700/img_20210225172243_76505dsj.webp"
-                            alt="photo"
-                            class="rounded-circle  profile"/></a>
-                </div>
-                <p class="story-name">KimTaeHee<br></p>
-            </div>
-            <div style="padding: 15px;">
-                <div class="story-profile">
-                    <a href=""><img
-                            src="http://img.sportsworldi.com/content/image/2021/07/18/20210718508401.jpg"
-                            alt="photo"
-                            class="rounded-circle  profile"/></a>
-                </div>
-                <p class="story-name">OhYeonSeo<br></p>
-            </div>
-            <div style="padding: 15px;">
-                <div class="story-profile">
-                    <a href=""><img
-                            src="http://www.incheonilbo.com/news/photo/201910/989046_269424_0446.jpg"
-                            alt="photo"
-                            class="rounded-circle  profile"/></a>
-                </div>
-                <p class="story-name">MinYoung<br></p>
-            </div>
-            <div style="padding: 15px;">
-                <div class="story-profile">
-                    <a href=""><img
-                            src="http://www.sisaweekly.com/news/photo/201807/img_23357_0.jpg"
-                            alt="photo"
-                            class="rounded-circle  profile"/></a>
-                </div>
-                <p class="story-name">HanHyoJoo<br></p>
-            </div>
-            <!--            위에다가 링크이미지 삽입-->
-        </div>
+    <!----------------왼 쪽메인화면창--------------------------------------------------------------------------------->
+    <div  class = "cLayer" style="max-width: 600px; width: 100%; max-height: 3000px; height: 100%; position: relative; font-size: 13px; font-weight: bold;">
+        <!------------    왼쪽 스토리창------------------------------------------------------------------------------->
+        <!--------------------   스토리 박스--------------------------------------------------------------------->
+<!--        <div class="story-box">-->
+<!--            &lt;!&ndash;                상단의 이미지와 이름 그리고 ''' 아이콘&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--            <div style="padding: 15px;">-->
+<!--                <div class="story-profile">-->
+<!--                    <a href=""><img-->
+<!--                            src="https://newsimg.hankookilbo.com/cms/articlerelease/2021/05/20/ec460693-5a1a-4e86-b289-56fb57b33af4.jpg"-->
+<!--                            alt="photo"-->
+<!--                            class="rounded-circle  profile"/></a>-->
+<!--                </div>-->
+<!--                <p class="story-name">Sekyoung<br></p>-->
+<!--            </div>-->
+<!--            <div style="padding: 15px;">-->
+<!--                <div class="story-profile">-->
+<!--                    <a href=""><img-->
+<!--                            src="https://entertainimg.kbsmedia.co.kr/cms/uploads/PERSON_20211118083045_e518df56d0623157e071f1c0923a1659.jpg"-->
+<!--                            alt="photo"-->
+<!--                            class="rounded-circle  profile"/></a>-->
+<!--                </div>-->
+<!--                <p class="story-name">ChaeSubin<br></p>-->
+<!--            </div>-->
+<!--            <div style="padding: 15px;">-->
+<!--                <div class="story-profile">-->
+<!--                    <a href=""><img-->
+<!--                            src="https://img.insight.co.kr/static/2021/02/25/700/img_20210225172243_76505dsj.webp"-->
+<!--                            alt="photo"-->
+<!--                            class="rounded-circle  profile"/></a>-->
+<!--                </div>-->
+<!--                <p class="story-name">KimTaeHee<br></p>-->
+<!--            </div>-->
+<!--            <div style="padding: 15px;">-->
+<!--                <div class="story-profile">-->
+<!--                    <a href=""><img-->
+<!--                            src="http://img.sportsworldi.com/content/image/2021/07/18/20210718508401.jpg"-->
+<!--                            alt="photo"-->
+<!--                            class="rounded-circle  profile"/></a>-->
+<!--                </div>-->
+<!--                <p class="story-name">OhYeonSeo<br></p>-->
+<!--            </div>-->
+<!--            <div style="padding: 15px;">-->
+<!--                <div class="story-profile">-->
+<!--                    <a href=""><img-->
+<!--                            src="http://www.incheonilbo.com/news/photo/201910/989046_269424_0446.jpg"-->
+<!--                            alt="photo"-->
+<!--                            class="rounded-circle  profile"/></a>-->
+<!--                </div>-->
+<!--                <p class="story-name">MinYoung<br></p>-->
+<!--            </div>-->
+<!--            <div style="padding: 15px;">-->
+<!--                <div class="story-profile">-->
+<!--                    <a href=""><img-->
+<!--                            src="http://www.sisaweekly.com/news/photo/201807/img_23357_0.jpg"-->
+<!--                            alt="photo"-->
+<!--                            class="rounded-circle  profile"/></a>-->
+<!--                </div>-->
+<!--                <p class="story-name">HanHyoJoo<br></p>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;            위에다가 링크이미지 삽입&ndash;&gt;-->
+<!--        </div>-->
         <!--            첫번째 피드!------------------------------------------------------------------------------------>
         <div class="feed-box">
             <!--                상단의 이미지와 이름 그리고 ''' 아이콘-------------------------------------------------->
@@ -364,10 +402,15 @@
                 <!--                몇일,시간,분전-->
                 <div style="font-weight: lighter; font-size: 10px;">3시간전</div>
                 <!--                댓글달기-->
-                <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                <div style="display:flex; flex-direction: row; justify-content: center; margin-left: -10px; margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                    <span style="margin-left: 8px; margin-top: 7px;" class="material-symbols-outlined">mood</span>
                     <input type="email" class="form-control"
                            style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
                            placeholder="댓글 달기 ...">
+                    <a href="#"
+                           style="width: 50px; margin-right: 8px; margin-top: 7px; text-decoration: none; color: cornflowerblue; font-weight: bold">
+                            게시
+                        </a>
                 </div>
             </div>
         </div>
@@ -441,10 +484,15 @@
                 <!--                몇일,시간,분전----------------------------------------------------------------------->
                 <div style="font-weight: lighter; font-size: 10px;">14시간전</div>
                 <!--                댓글달기---------------------------------------------------------------------------->
-                <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                <div style="display:flex; flex-direction: row; justify-content: center; margin-left: -10px; margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                    <span style="margin-left: 8px; margin-top: 7px;" class="material-symbols-outlined">mood</span>
                     <input type="email" class="form-control"
                            style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
                            placeholder="댓글 달기 ...">
+                    <a href="#"
+                           style="width: 50px; margin-right: 8px; margin-top: 7px; text-decoration: none; color: cornflowerblue; font-weight: bold">
+                            게시
+                        </a>
                 </div>
             </div>
         </div>
@@ -519,17 +567,23 @@
                 <!--                몇일,시간,분전-->
                 <div style="font-weight: lighter; font-size: 10px;">2일전</div>
                 <!--                댓글달기-->
-                <div style="margin-left: -10px;margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                <div style="display:flex; flex-direction: row; justify-content: center; margin-left: -10px; margin-top: 10px; border-top: solid 1px #dbdbdb;">
+                    <span style="margin-left: 8px; margin-top: 7px;" class="material-symbols-outlined">mood</span>
                     <input type="email" class="form-control"
                            style="box-shadow: none; border: none; border-radius: 0px;" id="exampleFormControlInput1"
                            placeholder="댓글 달기 ...">
+                    <a href="#"
+                           style="width: 50px; margin-right: 8px; margin-top: 7px; text-decoration: none; color: cornflowerblue; font-weight: bold">
+                            게시
+                        </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!--------------------    오른쪽단 피드창-------------------------------------------------------------------------------->
-    <div style=" max-width: 350px; width: 100%; max-height: 800px; height: 100%; position:sticky; top: 85px; margin-left: 24px;">
+    <div class="bLayer"
+         style=" max-width: 350px; width: 100%; max-height: 800px; height: 100%; position:sticky; top: 85px; margin-left: 24px;">
         <div style="margin-top: 8%; margin-left: 1%; margin-bottom: 2%;">
             <!--            내 프로필 부분----------------------------------------------------------------------------------->
             <div style="align-items: center; display: flex;">
